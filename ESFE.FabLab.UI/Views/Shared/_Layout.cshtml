@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="~/css/variables.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ESFE.FabLab.UI.styles.css" asp-append-version="true" />
+    @await RenderSectionAsync("Style", required: false)
 </head>
 <body>
     <div class="bg-modal"></div>
@@ -21,15 +22,15 @@
             <a href="#">Inicio</a>
             <a href="#">Articulos</a>
             <a href="#">Proyectos</a>
-            <a href="#">Aprende</a>
+            <a href="#">Aprender</a>
         </ul>
 
         <!-- icono menu hamburgesa -->
-        <div class="hamburger">
+        <label class="hamburger">
             <div id="bar4" class="bars"></div>
             <div id="bar5" class="bars"></div>
             <div id="bar6" class="bars"></div>
-        </div>
+        </label>
     </nav>
     <main role="main" class="pb-3">
         @RenderBody()
