@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ESFE.FabLab.BLL\ESFE.FabLab.BLL.csproj" />
+    <ProjectReference Include="..\ESFE.FabLab.EN\ESFE.FabLab.EN.csproj" />
+  </ItemGroup>
+
 </Project>
